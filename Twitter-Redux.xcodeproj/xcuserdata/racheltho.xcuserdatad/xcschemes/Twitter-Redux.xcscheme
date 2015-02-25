@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "3E3C7D521A93BCA70099FCCB"
-               BuildableName = "Twitter-App.app"
-               BlueprintName = "Twitter-App"
-               ReferencedContainer = "container:Twitter-App.xcodeproj">
+               BuildableName = "Twitter-Redux.app"
+               BlueprintName = "Twitter-Redux"
+               ReferencedContainer = "container:Twitter-Redux.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "3E3C7D671A93BCA70099FCCB"
-               BuildableName = "Twitter-AppTests.xctest"
-               BlueprintName = "Twitter-AppTests"
-               ReferencedContainer = "container:Twitter-App.xcodeproj">
+               BuildableName = "Twitter-ReduxTests.xctest"
+               BlueprintName = "Twitter-ReduxTests"
+               ReferencedContainer = "container:Twitter-Redux.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,9 +47,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "3E3C7D671A93BCA70099FCCB"
-               BuildableName = "Twitter-AppTests.xctest"
-               BlueprintName = "Twitter-AppTests"
-               ReferencedContainer = "container:Twitter-App.xcodeproj">
+               BuildableName = "Twitter-ReduxTests.xctest"
+               BlueprintName = "Twitter-ReduxTests"
+               ReferencedContainer = "container:Twitter-Redux.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -57,9 +57,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3E3C7D521A93BCA70099FCCB"
-            BuildableName = "Twitter-App.app"
-            BlueprintName = "Twitter-App"
-            ReferencedContainer = "container:Twitter-App.xcodeproj">
+            BuildableName = "Twitter-Redux.app"
+            BlueprintName = "Twitter-Redux"
+            ReferencedContainer = "container:Twitter-Redux.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3E3C7D521A93BCA70099FCCB"
-            BuildableName = "Twitter-App.app"
-            BlueprintName = "Twitter-App"
-            ReferencedContainer = "container:Twitter-App.xcodeproj">
+            BuildableName = "Twitter-Redux.app"
+            BlueprintName = "Twitter-Redux"
+            ReferencedContainer = "container:Twitter-Redux.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -94,9 +94,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3E3C7D521A93BCA70099FCCB"
-            BuildableName = "Twitter-App.app"
-            BlueprintName = "Twitter-App"
-            ReferencedContainer = "container:Twitter-App.xcodeproj">
+            BuildableName = "Twitter-Redux.app"
+            BlueprintName = "Twitter-Redux"
+            ReferencedContainer = "container:Twitter-Redux.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
