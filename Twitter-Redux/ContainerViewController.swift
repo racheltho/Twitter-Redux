@@ -60,10 +60,13 @@ class ContainerViewController: UIViewController, CenterViewControllerDelegate, L
         centerNavigationController = UINavigationController(rootViewController: centerViewController)
         centerNavigationController.navigationBar.barTintColor = twitterBlue
         centerNavigationController.navigationBar.tintColor = UIColor.whiteColor()
+        centerNavigationController.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
         centerNavigationController.navigationBar.translucent = false
         view.addSubview(centerNavigationController.view)
         addChildViewController(centerNavigationController)
         centerNavigationController.didMoveToParentViewController(self)
+        let panGestureRecognizer = UIPanGestureRecognizer(target: self, action: "handlePanGesture:")
+        centerNavigationController.view.addGestureRecognizer(panGestureRecognizer)
     }
     
     override func viewDidLoad() {
@@ -72,28 +75,8 @@ class ContainerViewController: UIViewController, CenterViewControllerDelegate, L
         println("container view loaded")
         composerViewController = UIStoryboard.composeController()
         timelineViewController = UIStoryboard.timelineController()
-        
-        
         setCenterNavigationController(timelineViewController)
         
-        
-//        if mainNavigationController == nil {
-//            let storyboard = UIStoryboard(name: "Timeline", bundle: nil)
-//            mainNavigationController = storyboard.instantiateInitialViewController() as UINavigationController
-//        }
-            // composerViewController.delegate = self
-        
-        // wrap the centerViewController in a navigation controller, so we can push views to it
-        // and display bar button items in the navigation bar
-        // centerNavigationController = UINavigationController(rootViewController: centerViewController)
-        //view.addSubview(timelineViewController.view)
-        //addChildViewController(timelineViewController)
-        
-        //timelineViewController.didMoveToParentViewController(self)
-        
-        let panGestureRecognizer = UIPanGestureRecognizer(target: self, action: "handlePanGesture:")
-        // panGestureRecognizer.cancelsTouchesInView = false
-        centerNavigationController.view.addGestureRecognizer(panGestureRecognizer)
     }
     
     // MARK: CenterViewController delegate methods
@@ -104,7 +87,6 @@ class ContainerViewController: UIViewController, CenterViewControllerDelegate, L
         if notAlreadyExpanded {
             addLeftMenuViewController()
         }
-        
         animateLeftMenu(shouldExpand: notAlreadyExpanded)
     }
    

@@ -23,6 +23,7 @@ class LeftMenuViewController: UIViewController, UITableViewDataSource, UITableVi
         println("leftmenu loaded")
         super.viewDidLoad()
         tableView.dataSource = self
+        tableView.delegate = self
         tableView.reloadData()
 
         // Do any additional setup after loading the view.

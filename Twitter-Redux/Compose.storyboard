@@ -9,7 +9,7 @@
         <!--Composer View Controller-->
         <scene sceneID="kga-qB-94s">
             <objects>
-                <viewController id="TSf-Ru-VTW" customClass="ComposerViewController" customModule="Twitter_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="TSf-Ru-VTW" customClass="ComposerViewController" customModule="Twitter_Redux" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="kMv-OI-Wib"/>
                         <viewControllerLayoutGuide type="bottom" id="VEy-9f-AlN"/>
@@ -147,13 +147,13 @@
                     </view>
                     <navigationItem key="navigationItem" id="gj9-HJ-2oR">
                         <barButtonItem key="leftBarButtonItem" systemItem="stop" id="gcm-BV-olW">
-                            <color key="tintColor" red="0.40000000596046448" green="0.80000001192092896" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="cancelTweet:" destination="TSf-Ru-VTW" id="qjB-hh-odj"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Tweet" id="TED-b8-cpj">
-                            <color key="tintColor" red="0.40000000596046448" green="0.80000001192092896" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="sendTweet:" destination="TSf-Ru-VTW" id="FrX-Cg-xhq"/>
                             </connections>
@@ -178,7 +178,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="1IS-AM-B1z">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.40000000596046448" green="0.80000001192092896" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
