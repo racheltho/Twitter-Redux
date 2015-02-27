@@ -19,6 +19,7 @@ class ContainerViewController: UIViewController, CenterViewControllerDelegate, L
     //var mainNavigationController: UINavigationController!
     var timelineViewController: TimelineViewController!
     var composerViewController: ComposerViewController!
+    var profileViewController: ProfileViewController!
     var leftMenuViewController: LeftMenuViewController?
     var centerNavigationController: UINavigationController!
     var centerViewController: CenterViewController!
@@ -43,6 +44,8 @@ class ContainerViewController: UIViewController, CenterViewControllerDelegate, L
             setCenterNavigationController(timelineViewController)
         case "Compose Tweet":
             setCenterNavigationController(composerViewController)
+        case "Profile":
+            setCenterNavigationController(profileViewController)
         default:
             break
         }
@@ -75,6 +78,7 @@ class ContainerViewController: UIViewController, CenterViewControllerDelegate, L
         println("container view loaded")
         composerViewController = UIStoryboard.composeController()
         timelineViewController = UIStoryboard.timelineController()
+        profileViewController = UIStoryboard.profileViewController()
         setCenterNavigationController(timelineViewController)
         
     }
@@ -193,6 +197,11 @@ private extension UIStoryboard {
     class func leftMenuViewController() -> LeftMenuViewController? {
         let storyboard = UIStoryboard(name: "LeftMenu", bundle: nil)
         return storyboard.instantiateInitialViewController() as? LeftMenuViewController
+    }
+
+    class func profileViewController() -> ProfileViewController? {
+        let storyboard = UIStoryboard(name: "Profile", bundle: nil)
+        return storyboard.instantiateInitialViewController() as? ProfileViewController
     }
     
     class func timelineController() -> TimelineViewController? {
