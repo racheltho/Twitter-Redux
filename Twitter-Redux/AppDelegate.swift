@@ -14,14 +14,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     var timelineStoryboard = UIStoryboard(name: "Timeline", bundle: nil)
     var loginStoryboard = UIStoryboard(name: "Main", bundle: nil)
+    var leftMenuStoryboard = UIStoryboard(name: "LeftMenu", bundle: nil)
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "userDidLogout", name: userDidLogoutNotification, object: nil)
         if User.currentUser != nil {
-            println("Current user detected: \(User.currentUser?.name)")
-            var vc = timelineStoryboard.instantiateViewControllerWithIdentifier("TimelineNavController") as UINavigationController
-            window?.rootViewController = vc
+            println("Current user detected: \(User.currentUser!.name!)")
+            let containerViewController = ContainerViewController()
+            window!.rootViewController = containerViewController
+            window!.makeKeyAndVisible()
+
+            //var vc = leftMenuStoryboard.instantiateViewControllerWithIdentifier("LeftMenu") as UIViewController
+            // var vc = timelineStoryboard.instantiateViewControllerWithIdentifier("TimelineNavController") as UINavigationController
+            //window?.rootViewController = vc
         }
         return true
     }

@@ -15,9 +15,12 @@ class ViewController: UIViewController {
         TwitterClient.sharedInstance.loginWithCompletion(){
             (user: User?, error: NSError?) in
             if user != nil {
-                let storyboard = UIStoryboard(name: "Timeline", bundle: nil)
-                let navController = storyboard.instantiateInitialViewController() as UINavigationController
-                self.presentViewController(navController, animated: true, completion: nil)
+                let containerViewController = ContainerViewController()
+
+                self.presentViewController(containerViewController, animated: true, completion: nil)
+//                let storyboard = UIStoryboard(name: "Timeline", bundle: nil)
+//                let navController = storyboard.instantiateInitialViewController() as UINavigationController
+//                self.presentViewController(navController, animated: true, completion: nil)
             } else {
                 //handle error
             }

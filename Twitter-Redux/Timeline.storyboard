@@ -8,7 +8,7 @@
         <!--Timeline View Controller-->
         <scene sceneID="aJa-YZ-gKI">
             <objects>
-                <viewController storyboardIdentifier="Timeline" id="bBt-8b-ZcU" customClass="TimelineViewController" customModule="Twitter_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Timeline" id="bBt-8b-ZcU" customClass="TimelineViewController" customModule="Twitter_Redux" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="XYb-7X-Gra"/>
                         <viewControllerLayoutGuide type="bottom" id="7Dr-ZM-0Hp"/>
@@ -21,7 +21,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" verticalCompressionResistancePriority="752" selectionStyle="default" indentationWidth="10" reuseIdentifier="tweetcell" rowHeight="126" id="N1S-uK-TMu" customClass="TweetCell" customModule="Twitter_App" customModuleProvider="target">
+                                    <tableViewCell contentMode="scaleToFill" verticalCompressionResistancePriority="752" selectionStyle="default" indentationWidth="10" reuseIdentifier="tweetcell" rowHeight="126" id="N1S-uK-TMu" customClass="TweetCell" customModule="Twitter_Redux" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" verticalCompressionResistancePriority="752" tableViewCell="N1S-uK-TMu" id="HMh-Bl-b2X">
