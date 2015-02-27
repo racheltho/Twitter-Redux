@@ -41,6 +41,7 @@
 		3E8E5E161A983A0B00FD9E49 /* TweetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8E5E151A983A0B00FD9E49 /* TweetCell.swift */; };
 		3E9FE6F91A9E428200402623 /* Menu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E9FE6F81A9E428200402623 /* Menu.storyboard */; };
 		3E9FE6FB1A9E45C500402623 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9FE6FA1A9E45C500402623 /* MenuViewController.swift */; };
+		3EC24A331AA0F22100E7DF02 /* CenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC24A321AA0F22100E7DF02 /* CenterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +96,7 @@
 		3E8E5E151A983A0B00FD9E49 /* TweetCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetCell.swift; sourceTree = "<group>"; };
 		3E9FE6F81A9E428200402623 /* Menu.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Menu.storyboard; sourceTree = "<group>"; };
 		3E9FE6FA1A9E45C500402623 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		3EC24A321AA0F22100E7DF02 /* CenterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CenterViewController.swift; sourceTree = "<group>"; };
 		E3CA66A457163894CB7FE563 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -229,6 +231,7 @@
 				3E9FE6FA1A9E45C500402623 /* MenuViewController.swift */,
 				3E07DA5C1A9FE0CE00C64330 /* ContainerViewController.swift */,
 				3E07DA5E1A9FE0ED00C64330 /* LeftMenuViewController.swift */,
+				3EC24A321AA0F22100E7DF02 /* CenterViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -430,6 +433,7 @@
 				3E8E5E161A983A0B00FD9E49 /* TweetCell.swift in Sources */,
 				3E3C7D821A965FC90099FCCB /* Tweet.swift in Sources */,
 				3E52426D1A9ACB5D0038BCF5 /* ComposerViewController.swift in Sources */,
+				3EC24A331AA0F22100E7DF02 /* CenterViewController.swift in Sources */,
 				3E8E5E111A97F7D500FD9E49 /* TimelineViewController.swift in Sources */,
 				3E3C7D801A965FB90099FCCB /* User.swift in Sources */,
 				3E07DA5F1A9FE0ED00C64330 /* LeftMenuViewController.swift in Sources */,

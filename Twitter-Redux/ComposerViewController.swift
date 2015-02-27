@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ComposerViewController: UIViewController, UITextViewDelegate {
+class ComposerViewController: CenterViewController, UITextViewDelegate {
     
     var currentUser: User?
     
@@ -26,6 +26,12 @@ class ComposerViewController: UIViewController, UITextViewDelegate {
 
     }
     
+    func returnToMenu(){
+        let containerViewController = ContainerViewController()
+        self.presentViewController(containerViewController, animated: true, completion: nil)
+        
+    }
+    
     func textViewDidBeginEditing(textView: UITextView) {
         if replyTo == nil {
             textView.text = ""
@@ -37,12 +43,12 @@ class ComposerViewController: UIViewController, UITextViewDelegate {
         params = ["status" : status.text!]
         println(params)
         TwitterClient.sharedInstance.postTweet(params, completion: {(error) -> () in
-            self.returnToTimeline()
+            self.returnToMenu()
         })
     }
     
     @IBAction func cancelTweet(sender: AnyObject) {
-       returnToTimeline()
+       returnToMenu()
     }
     
     override func viewDidLoad() {

@@ -17,7 +17,7 @@ class LeftMenuViewController: UIViewController, UITableViewDataSource, UITableVi
     @IBOutlet weak var tableView: UITableView!
     var delegate: LeftMenuViewControllerDelegate?
     
-    let menuItems: NSArray = ["Timeline", "Profile", "Settings"]
+    let menuItems: NSArray = ["Timeline", "Profile", "Compose Tweet", "Settings"]
     
     override func viewDidLoad() {
         println("leftmenu loaded")
@@ -44,18 +44,9 @@ class LeftMenuViewController: UIViewController, UITableViewDataSource, UITableVi
     }
 
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        println("inside didSelectRowAtIndexPath")
         delegate?.cellSelected(menuItems[indexPath.row] as NSString)
         println(menuItems[indexPath.row])
     }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

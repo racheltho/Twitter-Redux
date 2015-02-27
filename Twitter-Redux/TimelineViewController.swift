@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TimelineViewController: UIViewController, UITableViewDataSource, TweetCellReplyDelegate, TweetCellRetweetDelegate, TweetCellFavoriteDelegate {
+class TimelineViewController: CenterViewController, UITableViewDataSource, TweetCellReplyDelegate, TweetCellRetweetDelegate, TweetCellFavoriteDelegate {
     
     var tweets: [Tweet]?
     var pullRefreshControl: UIRefreshControl!
