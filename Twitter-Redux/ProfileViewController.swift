@@ -14,6 +14,10 @@ class ProfileViewController: CenterViewController {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var handleLabel: UILabel!
     @IBOutlet weak var taglineLabel: UILabel!
+    @IBOutlet weak var backgroundImage: UIImageView!
+    @IBOutlet weak var location: UILabel!
+    @IBOutlet weak var following: UILabel!
+    @IBOutlet weak var followers: UILabel!
     
     
     override func viewDidLoad() {
@@ -22,8 +26,12 @@ class ProfileViewController: CenterViewController {
             let user = User.currentUser! as User
             nameLabel.text = user.name
             profileImage.setImageWithURL(NSURL(string: user.profileImageURL!))
+            backgroundImage.setImageWithURL(NSURL(string: user.backgroundImageURL!))
             handleLabel.text = "@\(user.screenname!)"
             taglineLabel.text = user.tagline
+            location.text = user.location
+            following.text = "\(user.following!) Following"
+            followers.text = "\(user.followers!) Followers"
         }
 
         // Do any additional setup after loading the view.
