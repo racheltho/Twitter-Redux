@@ -22,6 +22,7 @@ class LeftMenuViewController: UIViewController, UITableViewDataSource, UITableVi
     override func viewDidLoad() {
         println("leftmenu loaded")
         super.viewDidLoad()
+        tableView.rowHeight = 100
         tableView.dataSource = self
         tableView.delegate = self
         tableView.reloadData()
