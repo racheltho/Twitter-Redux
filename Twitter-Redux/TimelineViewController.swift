@@ -10,6 +10,9 @@ import UIKit
 
 class TimelineViewController: CenterViewController, UITableViewDataSource, TweetCellReplyDelegate, TweetCellRetweetDelegate, TweetCellFavoriteDelegate {
     
+
+    @IBOutlet weak var navItem: UINavigationItem!
+    
     var tweets: [Tweet]?
     var pullRefreshControl: UIRefreshControl!
     
@@ -60,27 +63,36 @@ class TimelineViewController: CenterViewController, UITableViewDataSource, Tweet
         segueToComposer(replyTo)
     }
     
+    func loadTweets(){
+        println("\(navItem.title!)")
+        if navItem.title == "Mentions" {
+            TwitterClient.sharedInstance.mentionsWithCompletion(nil, completion: {(tweets, error) -> () in
+                self.tweets = tweets
+                self.tableView.reloadData()
+            })
+        } else {
+            navItem.title = "Timeline"
+            TwitterClient.sharedInstance.timelineWithCompletion(nil, completion: {(tweets, error) -> () in
+                self.tweets = tweets
+                self.tableView.reloadData()
+            })
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
         tableView.estimatedRowHeight = 100
         tableView.rowHeight = UITableViewAutomaticDimension
-        TwitterClient.sharedInstance.timelineWithCompletion(nil, completion: {(tweets, error) -> () in
-            self.tweets = tweets
-            self.tableView.reloadData()
-        })
+        loadTweets()
         pullRefreshControl = UIRefreshControl()
         pullRefreshControl.addTarget(self, action: "onRefresh", forControlEvents: UIControlEvents.ValueChanged)
         tableView.insertSubview(pullRefreshControl, atIndex: 0)
-
     }
     
     
     func onRefresh() {
-        TwitterClient.sharedInstance.timelineWithCompletion(nil, completion: {(tweets, error) -> () in
-            self.tweets = tweets
-            self.tableView.reloadData()
-        })
+        loadTweets()
         self.pullRefreshControl.endRefreshing()
     }
     

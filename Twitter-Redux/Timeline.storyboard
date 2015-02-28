@@ -5,7 +5,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Timeline View Controller-->
+        <!--Timeline-->
         <scene sceneID="aJa-YZ-gKI">
             <objects>
                 <viewController storyboardIdentifier="Timeline" id="bBt-8b-ZcU" customClass="TimelineViewController" customModule="Twitter_Redux" customModuleProvider="target" sceneMemberID="viewController">
@@ -151,7 +151,7 @@
                             <constraint firstAttribute="bottom" secondItem="f7T-IU-ZDU" secondAttribute="bottom" id="QzK-Ek-2PB"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="aMJ-40-Xr1" colorLabel="IBBuiltInLabel-Blue">
+                    <navigationItem key="navigationItem" title="Timeline" id="aMJ-40-Xr1" colorLabel="IBBuiltInLabel-Blue">
                         <barButtonItem key="leftBarButtonItem" title="Sign Out" id="byQ-0s-5Vs">
                             <connections>
                                 <action selector="signOut:" destination="bBt-8b-ZcU" id="BVN-tM-ChL"/>
@@ -164,6 +164,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="navItem" destination="aMJ-40-Xr1" id="23v-b9-GLo"/>
                         <outlet property="tableView" destination="f7T-IU-ZDU" id="ZOM-cc-Kom"/>
                     </connections>
                 </viewController>

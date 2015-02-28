@@ -41,6 +41,12 @@ class ContainerViewController: UIViewController, CenterViewControllerDelegate, L
         println("\(menuItem)")
         switch(menuItem){
         case "Timeline":
+            timelineViewController.navItem.title = "Timeline"
+            timelineViewController.loadTweets()
+            setCenterNavigationController(timelineViewController)
+        case "Mentions":
+            timelineViewController.navItem.title = "Mentions"
+            timelineViewController.loadTweets()
             setCenterNavigationController(timelineViewController)
         case "Compose Tweet":
             setCenterNavigationController(composerViewController)
