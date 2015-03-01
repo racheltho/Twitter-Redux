@@ -21,7 +21,6 @@ class ProfileViewController: CenterViewController {
     
     var user: User!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         if user != nil {

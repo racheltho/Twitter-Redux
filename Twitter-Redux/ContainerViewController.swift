@@ -51,6 +51,9 @@ class ContainerViewController: UIViewController, CenterViewControllerDelegate, L
         case "Compose Tweet":
             setCenterNavigationController(composerViewController)
         case "Profile":
+            let profileVCtypecast = profileViewController as ProfileViewController
+            profileVCtypecast.user = User.currentUser
+            
             setCenterNavigationController(profileViewController)
         default:
             break
