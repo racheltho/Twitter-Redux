@@ -19,11 +19,14 @@ class ProfileViewController: CenterViewController {
     @IBOutlet weak var following: UILabel!
     @IBOutlet weak var followers: UILabel!
     
+    var user: User!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        if User.currentUser != nil {
-            let user = User.currentUser! as User
+        if user != nil {
+//        if User.currentUser != nil {
+//            let user = User.currentUser! as User
             nameLabel.text = user.name
             profileImage.setImageWithURL(NSURL(string: user.profileImageURL!))
             backgroundImage.setImageWithURL(NSURL(string: user.backgroundImageURL!))

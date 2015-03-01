@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TimelineViewController: CenterViewController, UITableViewDataSource, TweetCellReplyDelegate, TweetCellRetweetDelegate, TweetCellFavoriteDelegate {
+class TimelineViewController: CenterViewController, UITableViewDataSource, TweetCellReplyDelegate, TweetCellRetweetDelegate, TweetCellFavoriteDelegate, TweetCellProfileDelegate {
     
 
     @IBOutlet weak var navItem: UINavigationItem!
@@ -32,6 +32,14 @@ class TimelineViewController: CenterViewController, UITableViewDataSource, Tweet
         let composeController = navController.topViewController as ComposerViewController
         composeController.replyTo = replyTo
         self.presentViewController(navController, animated: true, completion: nil)
+    }
+    
+    func goToProfile(tweetCell: TweetCell) {
+        println("go to profile called: \(tweetCell.name!.text)")
+        let storyboard = UIStoryboard(name: "Profile", bundle: nil)
+        let vc = storyboard.instantiateInitialViewController() as? ProfileViewController
+        vc!.user = tweetCell.tweet.user
+        self.presentViewController(vc!, animated: true, completion: nil)
     }
     
     func favorite(tweetCell: TweetCell) {
@@ -114,13 +122,18 @@ class TimelineViewController: CenterViewController, UITableViewDataSource, Tweet
         cell.replyDelegate = self
         cell.retweetDelegate = self
         cell.favoriteDelegate = self
+        cell.profileDelegate = self
         let thisTweet = tweets![indexPath.row] as Tweet
         let thisUser = thisTweet.user! as User
         cell.tweet = thisTweet
         cell.tweetText.text = thisTweet.text! as NSString
         cell.name.text = thisUser.name! as NSString
         cell.handle.text = "@" + thisUser.screenname! as NSString
-        cell.profileImage.setImageWithURL(NSURL(string: thisUser.profileImageURL!))
+        cell.imageButton.setImageForState(.Normal, withURL: NSURL(string: thisUser.profileImageURL!))
+        cell.imageButton.contentHorizontalAlignment = .Fill
+        cell.imageButton.contentVerticalAlignment = .Fill
+        println("\(thisUser.profileImageURL!)")
+        println("\(thisUser.backgroundImageURL!)")
         if thisTweet.favorited! {
             cell.favoriteButton.imageView?.image = UIImage(named: "favorite_on.png")
         } else {

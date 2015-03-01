@@ -10,6 +10,7 @@
 #define Twitter_Redux_Twitter_Redux_Bridging_Header_h
 
 #import <UIImageView+AFNetworking.h>
+#import <UIButton+AFNetworking.h>
 #import <SVProgressHUD.h>
 #import <BDBOAuth1RequestOperationManager.h>
 

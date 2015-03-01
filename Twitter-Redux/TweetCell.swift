@@ -20,6 +20,10 @@ protocol TweetCellFavoriteDelegate : class {
     func favorite(tweetCell: TweetCell)
 }
 
+protocol TweetCellProfileDelegate : class {
+    func goToProfile(tweetCell: TweetCell)
+}
+
 class TweetCell: UITableViewCell {
 
     var tweet: Tweet!
@@ -27,11 +31,12 @@ class TweetCell: UITableViewCell {
     weak var replyDelegate: TweetCellReplyDelegate?
     weak var retweetDelegate: TweetCellRetweetDelegate?
     weak var favoriteDelegate: TweetCellFavoriteDelegate?
+    weak var profileDelegate: TweetCellProfileDelegate?
     
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var handle: UILabel!
     @IBOutlet weak var tweetText: UILabel!
-    @IBOutlet weak var profileImage: UIImageView!
+    @IBOutlet weak var imageButton: UIButton!
     
     @IBOutlet weak var replyButton: UIButton!
     @IBOutlet weak var retweetButton: UIButton!
@@ -52,6 +57,10 @@ class TweetCell: UITableViewCell {
         favoriteDelegate?.favorite(self)
     }
 
+    @IBAction func selectProfile(sender: AnyObject) {
+        profileDelegate?.goToProfile(self)
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         tweetText.preferredMaxLayoutWidth = tweetText.frame.size.width
