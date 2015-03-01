@@ -12,7 +12,6 @@
 		3E07DA5F1A9FE0ED00C64330 /* LeftMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E07DA5E1A9FE0ED00C64330 /* LeftMenuViewController.swift */; };
 		3E07DA611A9FE10700C64330 /* LeftMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E07DA601A9FE10700C64330 /* LeftMenu.storyboard */; };
 		3E07DA631A9FED2F00C64330 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E07DA621A9FED2F00C64330 /* MenuCell.swift */; };
-		3E1EAF131AA3D57D00E1D6B1 /* twitter-redux2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3E1EAF121AA3D57D00E1D6B1 /* twitter-redux2.gif */; };
 		3E1F75CE1AA3A9100026CACF /* twitter-redux.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3E1F75CD1AA3A9100026CACF /* twitter-redux.gif */; };
 		3E3C7D591A93BCA70099FCCB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3C7D581A93BCA70099FCCB /* AppDelegate.swift */; };
 		3E3C7D5B1A93BCA70099FCCB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3C7D5A1A93BCA70099FCCB /* ViewController.swift */; };
@@ -43,6 +42,7 @@
 		3EC24A351AA12E6600E7DF02 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EC24A341AA12E6600E7DF02 /* Profile.storyboard */; };
 		3EC24A371AA12FA300E7DF02 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC24A361AA12FA300E7DF02 /* ProfileViewController.swift */; };
 		3ED115A21AA3D70B0077F04E /* twitter-redux3.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3ED115A11AA3D70B0077F04E /* twitter-redux3.gif */; };
+		3ED115A41AA3D86F0077F04E /* twitter-redux2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3ED115A31AA3D86F0077F04E /* twitter-redux2.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,7 +62,6 @@
 		3E07DA5E1A9FE0ED00C64330 /* LeftMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftMenuViewController.swift; sourceTree = "<group>"; };
 		3E07DA601A9FE10700C64330 /* LeftMenu.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LeftMenu.storyboard; sourceTree = "<group>"; };
 		3E07DA621A9FED2F00C64330 /* MenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
-		3E1EAF121AA3D57D00E1D6B1 /* twitter-redux2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "twitter-redux2.gif"; sourceTree = "<group>"; };
 		3E1F75CD1AA3A9100026CACF /* twitter-redux.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "twitter-redux.gif"; sourceTree = "<group>"; };
 		3E3C7D531A93BCA70099FCCB /* Twitter-Redux.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Twitter-Redux.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E3C7D571A93BCA70099FCCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -99,6 +98,7 @@
 		3EC24A341AA12E6600E7DF02 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		3EC24A361AA12FA300E7DF02 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		3ED115A11AA3D70B0077F04E /* twitter-redux3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "twitter-redux3.gif"; sourceTree = "<group>"; };
+		3ED115A31AA3D86F0077F04E /* twitter-redux2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "twitter-redux2.gif"; sourceTree = "<group>"; };
 		E3CA66A457163894CB7FE563 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -145,8 +145,8 @@
 		3E3C7D551A93BCA70099FCCB /* Twitter-Redux */ = {
 			isa = PBXGroup;
 			children = (
+				3ED115A31AA3D86F0077F04E /* twitter-redux2.gif */,
 				3ED115A11AA3D70B0077F04E /* twitter-redux3.gif */,
-				3E1EAF121AA3D57D00E1D6B1 /* twitter-redux2.gif */,
 				3E1F75CD1AA3A9100026CACF /* twitter-redux.gif */,
 				3E8E5E141A9839E200FD9E49 /* Cells */,
 				3E8E5E131A97F7FA00FD9E49 /* Storyboards */,
@@ -361,7 +361,6 @@
 			files = (
 				3EC24A351AA12E6600E7DF02 /* Profile.storyboard in Resources */,
 				3E5242641A9A92B90038BCF5 /* reply.png in Resources */,
-				3E1EAF131AA3D57D00E1D6B1 /* twitter-redux2.gif in Resources */,
 				3E5242651A9A92B90038BCF5 /* favorite_on.png in Resources */,
 				3E1F75CE1AA3A9100026CACF /* twitter-redux.gif in Resources */,
 				3E3C7D5E1A93BCA70099FCCB /* Main.storyboard in Resources */,
@@ -373,6 +372,7 @@
 				3E5242691A9A92C70038BCF5 /* retweet_hover.png in Resources */,
 				3E52426B1A9AC8FF0038BCF5 /* Compose.storyboard in Resources */,
 				3E5242661A9A92B90038BCF5 /* favorite_hover.png in Resources */,
+				3ED115A41AA3D86F0077F04E /* twitter-redux2.gif in Resources */,
 				3E5242731A9AE5F70038BCF5 /* .gitignore in Resources */,
 				3E5242621A9A92B90038BCF5 /* retweet.png in Resources */,
 				3E5242611A9A92B90038BCF5 /* retweet_on.png in Resources */,
