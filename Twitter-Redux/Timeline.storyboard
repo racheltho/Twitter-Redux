@@ -158,7 +158,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Timeline" id="aMJ-40-Xr1" colorLabel="IBBuiltInLabel-Blue">
-                        <barButtonItem key="leftBarButtonItem" title="Sign Out" id="byQ-0s-5Vs">
+                        <barButtonItem key="leftBarButtonItem" title="Log Out" id="byQ-0s-5Vs">
                             <connections>
                                 <action selector="signOut:" destination="bBt-8b-ZcU" id="BVN-tM-ChL"/>
                             </connections>

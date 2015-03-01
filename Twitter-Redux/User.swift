@@ -34,7 +34,7 @@ class User: NSObject {
         followers = dictionary["followers_count"] as? Int
         location = dictionary["location"] as? String
         profileImageURL = dictionary["profile_image_url"] as? String
-        backgroundImageURL = dictionary["profile_background_image_url"] as? String
+        backgroundImageURL = dictionary["profile_background_image_url_https"] as? String
         tagline = dictionary["description"] as? String
     }
     

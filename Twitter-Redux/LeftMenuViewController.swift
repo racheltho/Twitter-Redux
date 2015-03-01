@@ -17,12 +17,12 @@ class LeftMenuViewController: UIViewController, UITableViewDataSource, UITableVi
     @IBOutlet weak var tableView: UITableView!
     var delegate: LeftMenuViewControllerDelegate?
     
-    let menuItems: NSArray = ["Timeline", "Profile", "Compose Tweet", "Mentions"]
+    let menuItems: NSArray = ["Timeline", "Mentions", "Profile", "Compose Tweet", "Log Out"]
     
     override func viewDidLoad() {
         println("leftmenu loaded")
         super.viewDidLoad()
-        tableView.rowHeight = 100
+        tableView.rowHeight = 80
         tableView.dataSource = self
         tableView.delegate = self
         tableView.reloadData()

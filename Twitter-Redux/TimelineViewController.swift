@@ -35,11 +35,12 @@ class TimelineViewController: CenterViewController, UITableViewDataSource, Tweet
     }
     
     func goToProfile(tweetCell: TweetCell) {
-        println("go to profile called: \(tweetCell.name!.text)")
+        println("go to profile called: \(tweetCell.name.text!)")
         let storyboard = UIStoryboard(name: "Profile", bundle: nil)
-        let vc = storyboard.instantiateInitialViewController() as? ProfileViewController
-        vc!.user = tweetCell.tweet.user
-        self.presentViewController(vc!, animated: true, completion: nil)
+        let navController = storyboard.instantiateInitialViewController() as UINavigationController
+        let profileController = navController.topViewController as ProfileViewController
+        profileController.user = tweetCell.tweet.user
+        self.presentViewController(navController, animated: true, completion: nil)
     }
     
     func favorite(tweetCell: TweetCell) {
@@ -132,8 +133,6 @@ class TimelineViewController: CenterViewController, UITableViewDataSource, Tweet
         cell.imageButton.setImageForState(.Normal, withURL: NSURL(string: thisUser.profileImageURL!))
         cell.imageButton.contentHorizontalAlignment = .Fill
         cell.imageButton.contentVerticalAlignment = .Fill
-        println("\(thisUser.profileImageURL!)")
-        println("\(thisUser.backgroundImageURL!)")
         if thisTweet.favorited! {
             cell.favoriteButton.imageView?.image = UIImage(named: "favorite_on.png")
         } else {

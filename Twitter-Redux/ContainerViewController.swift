@@ -53,8 +53,9 @@ class ContainerViewController: UIViewController, CenterViewControllerDelegate, L
         case "Profile":
             let profileVCtypecast = profileViewController as ProfileViewController
             profileVCtypecast.user = User.currentUser
-            
             setCenterNavigationController(profileViewController)
+        case "Log Out":
+            User.currentUser?.logout()
         default:
             break
         }
@@ -210,7 +211,9 @@ private extension UIStoryboard {
 
     class func profileViewController() -> ProfileViewController? {
         let storyboard = UIStoryboard(name: "Profile", bundle: nil)
-        return storyboard.instantiateInitialViewController() as? ProfileViewController
+        let navController = storyboard.instantiateInitialViewController() as UINavigationController
+        return navController.topViewController as? ProfileViewController
+//        return storyboard.instantiateInitialViewController() as? ProfileViewController
     }
     
     class func timelineController() -> TimelineViewController? {

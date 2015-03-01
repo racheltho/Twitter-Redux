@@ -20,12 +20,11 @@ class ProfileViewController: CenterViewController {
     @IBOutlet weak var followers: UILabel!
     
     var user: User!
+    var sender: NSString!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         if user != nil {
-//        if User.currentUser != nil {
-//            let user = User.currentUser! as User
             nameLabel.text = user.name
             profileImage.setImageWithURL(NSURL(string: user.profileImageURL!))
             backgroundImage.setImageWithURL(NSURL(string: user.backgroundImageURL!))
@@ -35,24 +34,22 @@ class ProfileViewController: CenterViewController {
             following.text = "\(user.following!) Following"
             followers.text = "\(user.followers!) Followers"
         }
-
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func backButton(sender: AnyObject) {
+        returnToMenu()
     }
-    */
+
+    
+    func returnToMenu(){
+        let containerViewController = ContainerViewController()
+        self.presentViewController(containerViewController, animated: true, completion: nil)
+    }
+
 
 }
