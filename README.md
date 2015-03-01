@@ -7,4 +7,4 @@ Required features:
 - Profile page contains the user header view and basic user stats
 - Tapping on a user image from the home timeline or from the mentions timeline brings up that user's profile page.
 
-![alt tag](https://github.com/racheltho/Twitter-Redux/blob/master/Twitter-Redux/twitter-redux.gif)
+![alt tag](https://github.com/racheltho/Twitter-Redux/blob/master/Twitter-Redux/twitter-redux4.gif)
