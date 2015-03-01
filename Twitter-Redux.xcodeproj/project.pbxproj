@@ -42,6 +42,7 @@
 		3EC24A331AA0F22100E7DF02 /* CenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC24A321AA0F22100E7DF02 /* CenterViewController.swift */; };
 		3EC24A351AA12E6600E7DF02 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EC24A341AA12E6600E7DF02 /* Profile.storyboard */; };
 		3EC24A371AA12FA300E7DF02 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC24A361AA12FA300E7DF02 /* ProfileViewController.swift */; };
+		3ED115A21AA3D70B0077F04E /* twitter-redux3.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3ED115A11AA3D70B0077F04E /* twitter-redux3.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +98,7 @@
 		3EC24A321AA0F22100E7DF02 /* CenterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CenterViewController.swift; sourceTree = "<group>"; };
 		3EC24A341AA12E6600E7DF02 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		3EC24A361AA12FA300E7DF02 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		3ED115A11AA3D70B0077F04E /* twitter-redux3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "twitter-redux3.gif"; sourceTree = "<group>"; };
 		E3CA66A457163894CB7FE563 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -143,6 +145,7 @@
 		3E3C7D551A93BCA70099FCCB /* Twitter-Redux */ = {
 			isa = PBXGroup;
 			children = (
+				3ED115A11AA3D70B0077F04E /* twitter-redux3.gif */,
 				3E1EAF121AA3D57D00E1D6B1 /* twitter-redux2.gif */,
 				3E1F75CD1AA3A9100026CACF /* twitter-redux.gif */,
 				3E8E5E141A9839E200FD9E49 /* Cells */,
@@ -362,6 +365,7 @@
 				3E5242651A9A92B90038BCF5 /* favorite_on.png in Resources */,
 				3E1F75CE1AA3A9100026CACF /* twitter-redux.gif in Resources */,
 				3E3C7D5E1A93BCA70099FCCB /* Main.storyboard in Resources */,
+				3ED115A21AA3D70B0077F04E /* twitter-redux3.gif in Resources */,
 				3E42F96E1A96B01B00740C90 /* Timeline.storyboard in Resources */,
 				3E3C7D631A93BCA70099FCCB /* LaunchScreen.xib in Resources */,
 				3E5242671A9A92B90038BCF5 /* favorite.png in Resources */,
