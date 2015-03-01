@@ -12,6 +12,7 @@
 		3E07DA5F1A9FE0ED00C64330 /* LeftMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E07DA5E1A9FE0ED00C64330 /* LeftMenuViewController.swift */; };
 		3E07DA611A9FE10700C64330 /* LeftMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E07DA601A9FE10700C64330 /* LeftMenu.storyboard */; };
 		3E07DA631A9FED2F00C64330 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E07DA621A9FED2F00C64330 /* MenuCell.swift */; };
+		3E1EAF131AA3D57D00E1D6B1 /* twitter-redux2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3E1EAF121AA3D57D00E1D6B1 /* twitter-redux2.gif */; };
 		3E1F75CE1AA3A9100026CACF /* twitter-redux.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3E1F75CD1AA3A9100026CACF /* twitter-redux.gif */; };
 		3E3C7D591A93BCA70099FCCB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3C7D581A93BCA70099FCCB /* AppDelegate.swift */; };
 		3E3C7D5B1A93BCA70099FCCB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3C7D5A1A93BCA70099FCCB /* ViewController.swift */; };
@@ -60,6 +61,7 @@
 		3E07DA5E1A9FE0ED00C64330 /* LeftMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftMenuViewController.swift; sourceTree = "<group>"; };
 		3E07DA601A9FE10700C64330 /* LeftMenu.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LeftMenu.storyboard; sourceTree = "<group>"; };
 		3E07DA621A9FED2F00C64330 /* MenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
+		3E1EAF121AA3D57D00E1D6B1 /* twitter-redux2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "twitter-redux2.gif"; sourceTree = "<group>"; };
 		3E1F75CD1AA3A9100026CACF /* twitter-redux.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "twitter-redux.gif"; sourceTree = "<group>"; };
 		3E3C7D531A93BCA70099FCCB /* Twitter-Redux.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Twitter-Redux.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E3C7D571A93BCA70099FCCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 		3E3C7D551A93BCA70099FCCB /* Twitter-Redux */ = {
 			isa = PBXGroup;
 			children = (
+				3E1EAF121AA3D57D00E1D6B1 /* twitter-redux2.gif */,
 				3E1F75CD1AA3A9100026CACF /* twitter-redux.gif */,
 				3E8E5E141A9839E200FD9E49 /* Cells */,
 				3E8E5E131A97F7FA00FD9E49 /* Storyboards */,
@@ -355,6 +358,7 @@
 			files = (
 				3EC24A351AA12E6600E7DF02 /* Profile.storyboard in Resources */,
 				3E5242641A9A92B90038BCF5 /* reply.png in Resources */,
+				3E1EAF131AA3D57D00E1D6B1 /* twitter-redux2.gif in Resources */,
 				3E5242651A9A92B90038BCF5 /* favorite_on.png in Resources */,
 				3E1F75CE1AA3A9100026CACF /* twitter-redux.gif in Resources */,
 				3E3C7D5E1A93BCA70099FCCB /* Main.storyboard in Resources */,
